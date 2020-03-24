@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Border </title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="flex-item flex-column">
+            <div class="prototipo" id="prototipos">
+            </div>
+            <div class="code" id="code" style="padding-top: 30px;">
+            </div>
+        </div>
+        <div class="flex-item2">
+            <div>
+                <form>
+                    <div class="container-form">
+                        <label for="r"> R </label>
+                        <input type="range" id="r" max="255">
+                        <h3 id="r-result">  </h3>
+                    </div>
+
+                    <div class="container-form">
+                        <label for="g"> G </label>
+                        <input type="range" id="g" max="255">
+                        <h3 id="g-result">  </h3>
+                    </div>
+
+                    <div class="container-form">
+                        <label for="b"> B </label>
+                        <input type="range" id="b" max="255">
+                        <h3 id="b-result">  </h3>
+                    </div>
+
+                    <div class="container-form">
+                        <h2> Border radius: </h2>
+                        <input type="range" style="width: 100%;" id="border-radius" max="200">
+                    </div>
+                    <div class="container-form" style="padding-top: 10px;">
+                        <h2> Espessura: </h2>
+                        <input type="range" style="width: 100%;" id="espessura" max="60">
+                    </div>
+
+                    <div class="container-form" style="padding-top: 30px;">
+                        <h2> Tipo: </h2>
+                        <select id="type">
+                            <option> Dashed </option>
+                            <option> Dotted </option>
+                            <option> Solid </option>
+                            <option> Double </option>
+                            <option> Groove </option>
+                            <option> Ridge </option>
+                            <option> Inset </option>
+                            <option> Outset </option>
+                            <option> None </option>
+                            <option> Hidden </option>
+                        </select>
+                    </div>
+                </form>
+
+                <div class="container-form">
+                    <button onclick="pegarResultados()"> Testar </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="App.js"></script>
+</body>
+</html>
